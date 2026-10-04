@@ -1,7 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	fmt.Printf("Привет, мир!")
+
+	const pow_value = 2
+	var height = 1.8
+	var weight = 75.0
+
+	var imt = weight / math.Pow(height, pow_value)
+	fmt.Println(imt)
+
+	new_value := math.Round(imt)
+	fmt.Println(new_value)
 }
